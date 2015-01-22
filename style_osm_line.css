@@ -1,0 +1,330 @@
+/* ###############################*/
+/*         Zoom < 10,000,000                       */
+/* ###############################*/
+
+[@scale < 10000000]{
+   stroke-linecap: round;
+   font-family: Arial;
+   font-weight: bold;
+   font-fill: black;
+   font-size: 10;
+   halo-color: white;
+   halo-radius: 1;
+   -gt-label-follow-line: true;
+   -gt-label-max-angle-delta: 90;
+   -gt-label-max-displacement: 400;
+}
+
+/* ###############################*/
+/*         Zoom > 100001 < 10,000,000      */
+/* ###############################*/
+
+/* @title Railway */
+ [@scale > 100001] [@scale < 10000000] [railway = 'rail'] {
+   stroke-linecap: ; 
+   stroke: black;
+   stroke-width: 1px;
+   stroke-dasharray: 5 2;
+ }
+
+/* @title Tertiary */
+[@scale > 100001] [@scale < 1000000] [highway = 'tertiary'] {
+   stroke: #e5e5a8, #f8f8ba;
+   stroke-width: 1px, .5px;
+   label: [name];
+   z-index: 2, 3;
+ }
+
+[@scale > 100001] [@scale < 1000000] [highway = 'tertiary_link'] {
+   stroke: #e5e5a8, #f8f8ba;
+   stroke-width: 1px, .5px;
+   z-index: 2, 3;
+ }
+
+/* @title Secondary */
+[@scale > 100001][@scale < 1000000] [highway = 'secondary'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 1px, .5px;
+   label: [name];
+   z-index: 4, 5;
+ }
+
+[@scale > 100001] [@scale < 1000000] [highway = 'secondary_link'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 1px, .5px;
+   z-index: 4, 5;
+ }
+
+/* @title Primary */
+[@scale > 100001] [@scale < 1000000] [highway = 'primary'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 1px, .5px;
+   label: [name];
+   z-index: 6, 7;
+ }
+
+[@scale > 100001][@scale < 1000000] [highway = 'primary_link'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 1px, .5px;
+   z-index: 6, 7;
+ }
+
+/* @title Trunk */
+[@scale > 100001] [@scale < 1000000] [highway = 'trunk'] {
+   stroke: #88b788, #94d494;
+   stroke-width: 1px, .5px;
+   label: [name];
+   z-index: 8, 9;
+ }
+
+[@scale > 100001] [@scale < 1000000] [highway = 'trunk_link'] {
+   stroke: #88b788, #94d494;
+   stroke-width: 1px, .5px;
+   z-index: 8, 9;
+ }
+
+/* @title Motorway */
+[@scale > 100001] [@scale < 10000000] [highway = 'motorway'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 1px, .5px;
+   label: [name];
+   z-index: 10, 11;
+ }
+
+[@scale > 100001] [@scale < 10000000] [highway = 'motorway_link'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 1px, .5px;
+   z-index: 10, 11;
+ }
+
+/* ###############################*/
+/*           Zoom > 100,001 < 250,000        */
+/* ###############################*/
+
+/* @title Unclassified */
+[@scale > 100001] [@scale < 250000] [highway = 'unclassified'] {
+   stroke: #ccc;
+   stroke-width: .5px;
+   z-index: 0, 1;
+ }
+
+/* @title Residential */
+[@scale > 100001] [@scale < 250000] [highway = 'residential'] {
+   stroke: #ccc;
+   stroke-width: .5px;
+   z-index: 0, 1;
+ }
+
+/* ###############################*/
+/*             Zoom > 20,001 < 100,000        */
+/* ###############################*/
+
+/* @title Railway */
+[@scale > 20001] [@scale < 100000] [railway = 'rail'] {
+   stroke-linecap: ; 
+   stroke: black;
+   stroke-width: 1px;
+   stroke-dasharray: 5 2;
+ }
+
+/* @title Unclassified */
+[@scale > 20001] [@scale < 100000] [highway = 'unclassified'] {
+   stroke: #e2e1e1, #fefefe;
+   stroke-width: 3px, 1px;
+   z-index: 0, 1;
+ }
+
+/* @title Residential */
+[@scale > 20001] [@scale < 100000] [highway = 'residential'] {
+   stroke: #e2e1e1, #fefefe;
+   stroke-width: 3px, 1px;
+   z-index: 0, 1;
+ }
+
+/* @title Tertiary */
+[@scale > 20001] [@scale < 100000][highway = 'tertiary'] {
+   stroke: #e5e5a8, #f8f8ba;
+   stroke-width: 5px, 3px;
+   label: [name];
+   z-index: 2, 3;
+ }
+
+[@scale > 20001] [@scale < 100000][highway = 'tertiary_link'] {
+   stroke: #e5e5a8, #f8f8ba;
+   stroke-width: 5px, 3px;
+   z-index: 2, 3;
+ }
+
+/* @title Secondary */
+[@scale > 20001] [@scale < 100000] [highway = 'secondary'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 5px, 3px;
+   label: [name];
+   z-index: 4, 5;
+ }
+
+[@scale > 20001] [@scale < 100000] [highway = 'secondary_link'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 5px, 3px;
+   z-index: 4, 5;
+ }
+
+/* @title Primary */
+[@scale > 20001] [@scale < 100000] [highway = 'primary'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 5px, 3px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #cc8e8f;
+   halo-radius: 6;
+   label: [ref];
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
+   z-index: 6, 7;
+ }
+
+[@scale > 20001] [@scale < 100000] [highway = 'primary_link'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 5px, 3px;
+   z-index: 6, 7;
+ }
+
+/* @title Trunk */
+[@scale > 20001] [@scale < 100000] [highway = 'trunk'] {
+   stroke: #88b788, #94d494;
+   stroke-width: 5px, 3px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #88b788;
+   halo-radius: 6;
+   label: [ref];
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
+   z-index: 9,10;
+}
+
+[@scale > 20001] [@scale < 100000] [highway = 'trunk_link'] {
+   stroke: #88b788, #94d494;
+   stroke-width: 5px, 3px;
+   z-index: 9,10;
+}
+
+/* @title Motorway */
+[@scale > 20001] [@scale < 100000]  [highway = 'motorway'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 5px, 3px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #7f95b3;
+   halo-radius: 6;
+   label: [ref];
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
+   z-index: 10,11;
+}
+
+[@scale > 20001] [@scale < 100000]  [highway = 'motorway_link'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 5px, 3px;
+   z-index: 8,9;
+}
+
+/* ###############################*/
+/*                 Zoom < 20,000                      */
+/* ###############################*/
+
+[@scale < 20000] {
+   stroke-width: 8px, 6px;
+}
+
+/* @title Railway */
+[@scale < 20000] [railway = 'rail'] {
+   stroke-linecap: ; 
+   stroke: black;
+   stroke-width: 1px;
+   stroke-dasharray: 5 2;
+ }
+
+/* @title Unclassified */
+[@scale < 20000] [highway = 'unclassified'] {
+   stroke: #e2e1e1, #fefefe;
+   label: [name];
+   z-index: 0, 1;
+ }
+
+/* @title Residential */
+[@scale < 20000] [highway = 'residential'] {
+   stroke: #e2e1e1, #fefefe;
+   label: [name];
+   z-index: 0, 1;
+ }
+
+/* @title Tertiary */
+[@scale < 20000] [highway = 'tertiary'] {
+   stroke: #e5e5a8, #f8f8ba;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 2, 3;
+ }
+
+/* @title Secondary */
+[@scale < 20000] [highway = 'secondary'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 4, 5;
+ }
+
+[@scale < 20000] [highway = 'secondary_link'] {
+   stroke: #d9b381, #f8d5a9;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 4, 5;
+ }
+
+/* @title Primary */
+[@scale < 20000] [highway = 'primary'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 6, 7;
+}
+
+[@scale < 20000] [highway = 'primary_link'] {
+   stroke: #cc8e8f, #dc9e9e;
+   stroke-width: 10px, 8px;
+   z-index: 6, 7;
+}
+
+/* @title Trunk */
+[@scale < 20000] [highway = 'trunk']{
+   stroke: #88b788, #94d494;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 9,10;
+}
+
+[@scale < 20000] [highway = 'trunk_link'] {
+   stroke: #88b788, #94d494;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 9,10;
+}
+
+/* @title Motorway */
+[@scale < 20000] [highway = 'motorway'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 8,9;
+}
+
+[@scale < 20000] [highway = 'motorway_link'] {
+   stroke: #7f95b3, #87a2c8;
+   stroke-width: 10px, 8px;
+   label: [name];
+   z-index: 8,9;
+}
