@@ -1,0 +1,9 @@
+[@scale > 130000000] {
+  stroke: #BEBCB9; 
+  stroke-width: 0.5;
+ }
+
+ [@scale < 130000000] {
+  stroke:  #E1C5DB; 
+  stroke-width: 1;
+ }

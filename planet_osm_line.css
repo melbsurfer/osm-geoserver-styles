@@ -1,8 +1,8 @@
 /* ###############################*/
-/*         Zoom < 10,000,000                       */
+/*    Zoom < 1,000,000                            */
 /* ###############################*/
 
-[@scale < 10000000]{
+[@scale < 1000000]{
    stroke-linecap: round;
    font-family: Arial;
    font-weight: bold;
@@ -16,86 +16,65 @@
 }
 
 /* ###############################*/
-/*         Zoom > 100001 < 10,000,000      */
+/*  Zoom > 100001 < 1,000000    */
 /* ###############################*/
-
-/* @title Railway */
- [@scale > 100001] [@scale < 10000000] [railway = 'rail'] {
-   stroke-linecap: ; 
-   stroke: black;
-   stroke-width: 1px;
-   stroke-dasharray: 5 2;
- }
-
-/* @title Tertiary */
-[@scale > 100001] [@scale < 1000000] [highway = 'tertiary'] {
-   stroke: #e5e5a8, #f8f8ba;
-   stroke-width: 1px, .5px;
-   label: [name];
-   z-index: 2, 3;
- }
-
-[@scale > 100001] [@scale < 1000000] [highway = 'tertiary_link'] {
-   stroke: #e5e5a8, #f8f8ba;
-   stroke-width: 1px, .5px;
-   z-index: 2, 3;
- }
 
 /* @title Secondary */
 [@scale > 100001][@scale < 1000000] [highway = 'secondary'] {
    stroke: #d9b381, #f8d5a9;
-   stroke-width: 1px, .5px;
-   label: [name];
-   z-index: 4, 5;
- }
-
-[@scale > 100001] [@scale < 1000000] [highway = 'secondary_link'] {
-   stroke: #d9b381, #f8d5a9;
-   stroke-width: 1px, .5px;
+   stroke-width: .5px, .25px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #f8d5a9;
+   halo-radius: 6;
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
    z-index: 4, 5;
  }
 
 /* @title Primary */
 [@scale > 100001] [@scale < 1000000] [highway = 'primary'] {
    stroke: #cc8e8f, #dc9e9e;
-   stroke-width: 1px, .5px;
-   label: [name];
-   z-index: 6, 7;
- }
-
-[@scale > 100001][@scale < 1000000] [highway = 'primary_link'] {
-   stroke: #cc8e8f, #dc9e9e;
-   stroke-width: 1px, .5px;
+   stroke-width: .5px, .25px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #cc8e8f;
+   halo-radius: 6;
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
    z-index: 6, 7;
  }
 
 /* @title Trunk */
 [@scale > 100001] [@scale < 1000000] [highway = 'trunk'] {
    stroke: #88b788, #94d494;
-   stroke-width: 1px, .5px;
-   label: [name];
-   z-index: 8, 9;
- }
-
-[@scale > 100001] [@scale < 1000000] [highway = 'trunk_link'] {
-   stroke: #88b788, #94d494;
-   stroke-width: 1px, .5px;
+   stroke-width: .5px, .25px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #88b788;
+   halo-radius: 6;
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
    z-index: 8, 9;
  }
 
 /* @title Motorway */
-[@scale > 100001] [@scale < 10000000] [highway = 'motorway'] {
+[@scale > 100001] [@scale < 1000000] [highway = 'motorway'] {
    stroke: #7f95b3, #87a2c8;
-   stroke-width: 1px, .5px;
-   label: [name];
+   stroke-width: .5px, .25px;
+   label: [ref];
+   font-fill: white;
+   font-size: 10;
+   halo-color: #7f95b3;
+   halo-radius: 6;
+   -gt-label-follow-line: false;
+   -gt-label-padding: 150;
    z-index: 10, 11;
  }
 
-[@scale > 100001] [@scale < 10000000] [highway = 'motorway_link'] {
-   stroke: #7f95b3, #87a2c8;
-   stroke-width: 1px, .5px;
-   z-index: 10, 11;
- }
 
 /* ###############################*/
 /*           Zoom > 100,001 < 250,000        */
@@ -122,7 +101,7 @@
 /* @title Railway */
 [@scale > 20001] [@scale < 100000] [railway = 'rail'] {
    stroke-linecap: ; 
-   stroke: black;
+   stroke: grey;
    stroke-width: 1px;
    stroke-dasharray: 5 2;
  }
@@ -178,7 +157,6 @@
    font-size: 10;
    halo-color: #cc8e8f;
    halo-radius: 6;
-   label: [ref];
    -gt-label-follow-line: false;
    -gt-label-padding: 150;
    z-index: 6, 7;
@@ -199,7 +177,6 @@
    font-size: 10;
    halo-color: #88b788;
    halo-radius: 6;
-   label: [ref];
    -gt-label-follow-line: false;
    -gt-label-padding: 150;
    z-index: 9,10;
@@ -220,7 +197,6 @@
    font-size: 10;
    halo-color: #7f95b3;
    halo-radius: 6;
-   label: [ref];
    -gt-label-follow-line: false;
    -gt-label-padding: 150;
    z-index: 10,11;
@@ -243,7 +219,7 @@
 /* @title Railway */
 [@scale < 20000] [railway = 'rail'] {
    stroke-linecap: ; 
-   stroke: black;
+   stroke: grey;
    stroke-width: 1px;
    stroke-dasharray: 5 2;
  }

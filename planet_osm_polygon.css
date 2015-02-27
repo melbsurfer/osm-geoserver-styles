@@ -1,9 +1,9 @@
-[@scale < 1000000]{
+[@scale < 100000]{
    font-family: Arial;
    font-weight: bold;
-   font-fill: white;
+   font-fill: grey;
    font-size: 10;
-   halo-color: black;
+   halo-color: white;
    halo-radius: 0.5;
    -gt-label-follow-line: true;
    -gt-label-max-angle-delta: 90;
@@ -14,93 +14,92 @@
 /* --- Parks, woods, other green things --- */
 
 /* @title Forest */
-[@scale < 20000000] [landuse = 'forest']{  
+[@scale < 100000] [landuse = 'forest']{  
    fill: #a0cf85; 
 }
 
 /* @title Grass */
-[@scale < 20000000] [landuse = 'grass']{  
+[@scale < 100000] [landuse = 'grass']{  
    fill: #cfeca8; 
 }
 
 /* @title Golf Course */
-[@scale < 20000000] [landuse = 'golf_course']{  
+[@scale < 100000] [landuse = 'golf_course']{  
    fill: #b5e3b5; 
 }
 
 /* @title Park */
-[@scale < 20000000] [landuse = 'park']{  
+[@scale < 100000] [landuse = 'park']{  
    fill: #cdf7c9; 
 }
 
 /* @title Wood */
-[@scale < 20000000] [landuse = 'wood' or landuse = 'wooded' or landuse = 'woodland']{  
+[@scale < 100000] [landuse = 'wood' or landuse = 'wooded' or landuse = 'woodland']{  
    fill: #aed1a0; 
 }
 
 /* @title Vineyard */
-[@scale < 20000000] [landuse = 'vineyard']{  
+[@scale < 100000] [landuse = 'vineyard']{  
    fill: #b3e2a8; 
 }
 
 /* @title Grassland */
-[@scale < 20000000] [landuse = 'grassland']{  
+[@scale < 100000] [landuse = 'grassland']{  
    fill: #c6e4b4; 
 }
 
 /* --- sports --- */
 
 /* @title Stadium */
-[@scale < 20000000] [landuse = 'sport_centre' or landuse = 'sports_centre']{  
+[@scale < 100000] [landuse = 'sport_centre' or landuse = 'sports_centre']{  
    label: [name];  
    fill: #3c9; 
 }
 
 /* @title Track */
-[@scale < 20000000] [landuse = 'track']{  
+[@scale < 100000] [landuse = 'track']{  
    fill: #74dcba; 
 }
-
 
 /* --- "base" landuses --- */
 
 /* @title Residential */
-[@scale < 20000000] [landuse = 'residential']{
+[@scale < 100000] [landuse = 'residential']{
    label: [name];   
    fill: #E1E1E1; 
    stroke: #B9B9B9;
 }
 
 /* @title Retail */
-[@scale < 20000000] [landuse = 'retail']{
+[@scale < 100000] [landuse = 'retail']{
    label: [name];   
    fill: #FFD6D1; 
    stroke: #D99C95;
 }
 
 /* @title Commercial */
-[@scale < 20000000] [landuse = 'commercial']{
+[@scale < 100000] [landuse = 'commercial']{
    label: [name];   
    fill: #F2DAD9; 
    stroke: #D1B2B0;
 }
 
 /* @title Industrial */
-[@scale < 20000000] [landuse = 'industrial']{
+[@scale < 100000] [landuse = 'industrial']{
    label: [name];   
    fill: #EBDBE8; 
    stroke: #C6B3C3;
 }
 
 /* @title Railway */
-[@scale < 20000000] [landuse = 'railway']{
+[@scale < 100000] [landuse = 'railway']{
    label: [name];   
    fill: #EBDBE8; 
    stroke: #C6B3C3;
 }
 
 /* @title Farmland */
-[@scale < 20000000] [landuse = 'farmland']{
+[@scale < 100000] [landuse = 'farmland']{
    label: [name];   
    fill: #EDDDC9; 
    stroke: #C8B69E;
@@ -109,30 +108,30 @@
 /* --- Other --- */
 
 /* @title Aerodrome */
-[@scale < 20000000] [landuse = 'aerodrome']{
+[@scale < 100000] [landuse = 'aerodrome']{
    label: [name];   
    fill: #e9e7e2; 
 }
 
 /* @title Allotments */
-[@scale < 20000000] [landuse = 'allotments']{
+[@scale < 100000] [landuse = 'allotments']{
    label: [name];   
    fill: #e5c7ab; 
 }
 
 /* @title Bare Ground */
-[@scale < 20000000] [landuse = 'bare_ground']{  
+[@scale < 100000] [landuse = 'bare_ground']{  
    fill: #eee5dc; 
 }
 
 /* @title Cemetery */
-[@scale < 20000000] [landuse = 'cemetery' or landuse = 'grave_yard']{  
+[@scale < 100000] [landuse = 'cemetery' or landuse = 'grave_yard']{  
    label: [name]; 
    fill: #aacbaf; 
 }
 
 /* @title Construction */
-[@scale < 20000000] [landuse = 'construction']{  
+[@scale < 100000] [landuse = 'construction']{  
    label: [name]; 
    fill: #b6b592; 
 }
@@ -143,104 +142,104 @@
 }
 
 /* @title Garage */
-[@scale < 20000000] [landuse = 'garages']{  
+[@scale < 100000] [landuse = 'garages']{  
    label: [name]; 
    fill: #dfddce; 
 }
 
 /* @title Heath */
-[@scale < 20000000] [landuse = 'heath']{  
+[@scale < 100000] [landuse = 'heath']{  
    label: [name]; 
    fill: #d6d99f; 
 }
 
 /* @title Parking */
-[@scale < 20000000] [landuse = 'parking']{  
+[@scale < 100000] [landuse = 'parking']{  
    label: [name]; 
    fill: #f7efb7; 
 }
 
 /* @title Place of Worship */
-[@scale < 20000000] [landuse = 'place_of_worship']{  
+[@scale < 100000] [landuse = 'place_of_worship']{  
    label: [name]; 
    fill: #cdccc9;
    stroke: #111; 
 }
 
 /* @title Playground */
-[@scale < 20000000] [landuse = 'playground']{  
+[@scale < 100000] [landuse = 'playground']{  
    label: [name]; 
    fill: #ccfff1;
 }
 
 /* @title Power */
-[@scale < 20000000] [landuse = 'power']{  
+[@scale < 100000] [landuse = 'power']{  
    label: [name]; 
    fill: #bbb;
 }
 
 /* @title Rest Area */
-[@scale < 20000000] [landuse = 'rest_area']{  
+[@scale < 100000] [landuse = 'rest_area']{  
    label: [name]; 
    fill: #efc8c8;
 }
 
 /* @title Sand */
-[@scale < 20000000] [landuse = 'sand']{  
+[@scale < 100000] [landuse = 'sand']{  
    label: [name]; 
    fill: #f5e9c6;
 }
 
 /* @title School */
-[@scale < 20000000] [landuse = 'school' or landuse = 'university' or landuse = 'college' ]{  
+[@scale < 100000] [landuse = 'school' or landuse = 'university' or landuse = 'college' ]{  
    label: [name]; 
    fill: #f0f0d8;
 }
 
 /* @title Station */
-[@scale < 20000000] [landuse = 'station' ]{  
+[@scale < 100000]  [landuse = 'station' ]{  
    label: [name]; 
    fill: #d4aaaa;
 }
 
 /* @title Scrub */
-[@scale < 20000000] [landuse = 'scrub' ]{  
+[@scale < 100000] [landuse = 'scrub' ]{  
    label: [name]; 
    fill: #b5e3b5;
 }
 
 /* @title Orchard */
-[@scale < 20000000] [landuse = 'orchard' ]{  
+[@scale < 100000] [landuse = 'orchard' ]{  
    label: [name]; 
    fill: #9ed88f;
 }
 
 /* @title Theme Park */
-[@scale < 20000000] [landuse = 'theme_park' ]{  
+[@scale < 100000] [landuse = 'theme_park' ]{  
    label: [name]; 
    fill: #734a08;
 }
 
 /* @title Quarry */
-[@scale < 20000000] [landuse = 'quarry' ]{  
+[@scale < 100000] [landuse = 'quarry' ]{  
    label: [name]; 
    fill: #c5c3c3;
 }
 
 /* @title Military */
-[@scale < 20000000] [landuse = 'military' ]{  
+[@scale < 100000][ landuse = 'military' ]{  
    label: [name]; 
    fill: #f55;
 }
 
 /* @title Zoo */
-[@scale < 20000000] [landuse = 'zoo' ]{  
+[@scale < 100000] [landuse = 'zoo' ]{  
    label: [name]; 
    fill: #a4f3a1;
 }
 
 /* @title Beach */
-[@scale < 20000000] [landuse = 'beach' ]{  
+[@scale < 100000] [landuse = 'beach' ]{  
    label: [name]; 
    fill: #fff1ba;
 }
