@@ -6,4 +6,4 @@ These files can be used to style up the Open Street Map layers hosted on a Geose
 extension for Geoserver.  I attempeted to get the styles as close to the original OSM data as possible.  However, at this 
 time it is not an exact.  It is still a work in progress.  
 
-The data also uses layers from the 1:10M Natural Earth data set. [an example](http://example.com/ "Title")
+The data also uses layers from the 1:10M Natural Earth data set. [Natural Earth](http://www.naturalearthdata.com// "Title")
