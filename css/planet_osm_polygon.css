@@ -1,9 +1,9 @@
 [@scale < 100000]{
    font-family: Arial;
    font-weight: bold;
-   font-fill: grey;
-   font-size: 10;
-   halo-color: white;
+   font-fill: white;
+   font-size: 14;
+   halo-color: black;
    halo-radius: 0.5;
    -gt-label-follow-line: true;
    -gt-label-max-angle-delta: 90;

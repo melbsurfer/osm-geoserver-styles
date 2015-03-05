@@ -1,7 +1,7 @@
-[scalerank <= 1] [@scale < 100000000] { 
+[scalerank > 1] [@scale < 4000000] { 
   label: [name];
   font-family: Arial;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: bold;
   halo-color: white;
   halo-radius: 1;
