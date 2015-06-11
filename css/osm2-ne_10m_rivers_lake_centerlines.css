@@ -1,0 +1,15 @@
+[@scale > 10000001] [@scale < 20000000] {
+   stroke:  #B5D0D0;
+   stroke-width: 0.5; 
+ 
+}
+ [@scale < 10000000]{
+   stroke:  #B5D0D0;   
+   stroke-width: 1.0;    
+   label: [name];
+   font-fill: grey;
+   font-weight: bold;
+   halo-color: #E0FFFF;
+   halo-radius: 2;
+  -gt-label-follow-line: true;
+}

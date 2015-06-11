@@ -1,0 +1,27 @@
+[@scale > 10000001] [@scale < 35000001] {
+  stroke-width: .5;
+  stroke:#E1C5DB;
+  stroke-dasharray: 5 2;
+  label: [name];
+  font-family: Arial;
+  font-fill: #B189B0;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  halo-color: white;
+  halo-radius: 2;
+ }
+
+ [@scale > 100000] [@scale < 10000000] {
+  stroke-width: 0.2;
+  stroke:#E1C5DB;
+  stroke-dasharray: 5 2; 
+  label: [name];
+  font-family: Arial;
+  font-fill: #B189B0;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: italic;
+  halo-color: white;
+  halo-radius: 2;
+ }

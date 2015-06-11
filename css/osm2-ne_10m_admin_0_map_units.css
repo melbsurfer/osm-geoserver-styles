@@ -1,0 +1,33 @@
+*{  
+fill: #F1EEE8;
+  stroke: #F1EEE8;
+  stroke-width: 1.5;
+}
+[@scale > 10000000] [@scale < 100000001] {
+  label: [name];
+  font-family: Arial;
+  font-fill: black;
+  font-size: 14px;
+  font-weight: bold;
+  halo-color: #E0FFFF;
+  halo-radius: 2;
+ }
+[@scale > 130000000] {
+  stroke: #BEBCB9; 
+  stroke-width: 1.5;
+ }
+
+ [@scale < 130000000] {
+  stroke:  #E1C5DB; 
+  stroke-width: 3;
+ }
+
+[@scale > 100000] [@scale < 10000000] {
+  label: [name];
+  font-family: Arial;
+  font-fill: black;
+  font-size: 16px;
+  font-weight: bold;
+  halo-color: #E0FFFF;
+  halo-radius: 2;
+ }

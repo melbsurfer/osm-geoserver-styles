@@ -1,0 +1,12 @@
+* {
+  fill: #B5D0D0;
+  stroke: #B5D0D0;
+  stroke-width: 0.5; 
+}
+ [@scale < 10000000] {
+  label: [name];
+  font-family: Arial;
+  font-fill: grey;
+  font-size: 12px;
+  font-weight: bold;
+ }
