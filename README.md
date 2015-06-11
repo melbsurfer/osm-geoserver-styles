@@ -1,6 +1,7 @@
 # Open Street Map Geoserver CSS v2.0
 *Note: This is an update to the original set of style sheets with some new layers being used in the map.*
 
+![ScreenShot](docs/osm2_layers.jpg)
 
 
 These files can be used to style up the Open Street Map layers hosted on a Geoserver.  I made these using the CSS
