@@ -5,4 +5,4 @@ extension for Geoserver.  I attempeted to get the styles (colors, widths, etc) a
 
 The styles area also used for the large scale, 1:10m [Natural Earth](http://www.naturalearthdata.com// "Title") data set. 
 
-*Note: A new branch has been added with changes to the map.  The osm2 branch has the latest version of the styles.*
+*Note: A new branch has been added with changes to the map.  The [osm2]    (https://github.com/melbsurfer/osm-geoserver-styles/blob/osm2/README.md "Title")branch has the latest version of the styles.*
