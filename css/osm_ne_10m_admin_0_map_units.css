@@ -1,9 +1,0 @@
-[@scale > 10000000] [@scale < 100000001] {
-  label: [sovereignt];
-  font-family: Arial;
-  font-fill: #B189B0;
-  font-size: 12px;
-  font-weight: bold;
-  halo-color: white;
-  halo-radius: 2;
- }
